@@ -1,5 +1,5 @@
 var messageSpace = document.getElementById("welcomeMessage");
-messageSpace.innerHTML = "You've connected to the JavaScript!";
+messageSpace.innerHTML = "You've connected to the JavaScript";
 
 var textInput = document.getElementById("textInput");
 
