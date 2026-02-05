@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+<script type="module" src="main.mjs"></script>
+
 <head>
     <title>JavaScript and Firebase refresher</title>
 </head>
@@ -16,7 +18,7 @@
         <button onclick="onTextInputButtonClick()">Submit</button><br>
         <label>Send To Firebase:</label>
         <input type="text" id="textInput" placeholder="Type here..">
-        <button onclick="onTextInputButtonClick()">Submit</button>
+        <button onclick="fb_set('hello');">Send</button>
     </ul>
 
     <h2>JavaScript</h2>
@@ -57,3 +59,5 @@
 <script src="script.js"></script>
 
 </html>
+
+
