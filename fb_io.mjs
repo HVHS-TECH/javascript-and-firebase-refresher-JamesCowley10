@@ -80,14 +80,14 @@ function fb_login() {
         'color: ' + COL_C + '; background-color: ' + COL_B + ';');
 
     const FB_GAMECONFIG = {
-        apiKey: "AIzaSyDacbOkYkjxAG1pK3QgnAoTcoSMU2_4nRY",
-        authDomain: "comp-2026-james-cowley.firebaseapp.com",
-        databaseURL: "https://comp-2026-james-cowley-default-rtdb.firebaseio.com",
-        projectId: "comp-2026-james-cowley",
-        storageBucket: "comp-2026-james-cowley.firebasestorage.app",
-        messagingSenderId: "78369144689",
-        appId: "1:78369144689:web:41b40e97e20d241a16c0d0",
-        measurementId: "G-PW0CWMZYG8"
+        apiKey: "AIzaSyCYwD2IYqCFh8TK4j1zgBfVm0XBXQOs_BE",
+        authDomain: "comp-james-cowley.firebaseapp.com",
+        databaseURL: "https://comp-james-cowley-default-rtdb.firebaseio.com",
+        projectId: "comp-james-cowley",
+        storageBucket: "comp-james-cowley.firebasestorage.app",
+        messagingSenderId: "573308382841",
+        appId: "1:573308382841:web:cf31d7e7fbe60c432faea8",
+        measurementId: "G-GECJPBKJ9D"
     };
 
     const FB_GAMEAPP = initializeApp(FB_GAMECONFIG);
@@ -132,12 +132,12 @@ function fb_login() {
                     if (fb_data != null) {
                         console.log("✅ User Is An Admin");
                         sessionStorage.setItem('admin', 'y');
-                        location.href = gameUrl;
+                        //location.href = gameUrl;
                         //location.href = '/main/gamePage/gamePage.html'
                     } else {
                         console.log("Not an admin");
                         sessionStorage.setItem('admin', 'n');
-                        location.href = gameUrl;
+                        //location.href = gameUrl;
                         //location.href = '/main/gamePage/gamePage.html'
                     }
 
@@ -159,12 +159,12 @@ function fb_login() {
                     if (fb_data != null) {
                         console.log("✅ User Is An Admin");
                         sessionStorage.setItem('admin', 'y');
-                        location.href = regUrl;
+                        //location.href = regUrl;
                         //location.href = 'main/reg/regPage.html'
                     } else {
                         console.log("Not an admin");
                         sessionStorage.setItem('admin', 'n');
-                        location.href = regUrl;
+                        //location.href = regUrl;
                         //location.href = 'main/reg/regPage.html'
                     }
 
