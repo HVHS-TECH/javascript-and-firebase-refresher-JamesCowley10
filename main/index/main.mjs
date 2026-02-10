@@ -44,9 +44,20 @@ window.onTextInputButtonClick = async () => {
 // Reads all messages from firebase
 window.readAllMessages = async () => {
     const allSentMsgs = await fb_get('userDetails/');
-    console.log(allSentMsgs);
-    
+
+    const allMessagesDisplayListContainer =
+        document.getElementById('allMessagesDisplayList');
+
+    Object.entries(allSentMsgs).forEach(([user, messageData]) => {
+        const tableRow = allMessagesDisplayListContainer.insertRow();
+        const userCell = tableRow.insertCell();
+        const messageCell = tableRow.insertCell();
+
+        userCell.textContent = user + ":";
+        messageCell.textContent = messageData.Message;
+    });
 };
+
 
 /**************************************************************/
 //   END OF CODE
