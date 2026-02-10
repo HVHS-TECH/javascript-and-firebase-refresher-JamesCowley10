@@ -41,6 +41,13 @@ window.onTextInputButtonClick = async () => {
     fb_set('userDetails/' + uid, { Message: userSentMsg });
 };
 
+// Reads all messages from firebase
+window.readAllMessages = async () => {
+    const allSentMsgs = await fb_get('userDetails/');
+    console.log(allSentMsgs);
+    
+};
+
 /**************************************************************/
 //   END OF CODE
 /**************************************************************/
