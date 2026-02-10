@@ -1,0 +1,75 @@
+/*************************************************************
+  style.css
+
+  Written by James Cowley, Term 1 2026
+  index.html Styling
+*************************************************************/
+/*------------------------------------------------------------
+  Custom Font Implementation
+/*----------------------------------------------------------*/
+
+@font-face {
+  font-family: customFont;
+  src: url('/assets/customFont.ttf') format('truetype');
+  font-display: swap;
+}
+
+/*------------------------------------------------------------
+  Body Styling
+/*----------------------------------------------------------*/
+body {
+  background: scroll;
+  font-family: customFont;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  opacity: 0;
+  animation: fadeIn 4s forwards;
+  user-select: none;
+  scale: 0.96;
+}
+
+/*------------------------------------------------------------
+  Button Styling
+/*----------------------------------------------------------*/
+
+button {
+  font-family: customFont;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: color 0.3s;
+  text-align: center;
+  user-select: none;
+  height: 20px;
+  width: 60px;
+}
+
+/*------------------------------------------------------------
+  Button Styling
+/*----------------------------------------------------------*/
+
+input {
+  font-family: customFont;
+  border-color: lightgray;
+  border-radius: 5px;
+  transition: color 0.3s;
+}
+
+/*------------------------------------------------------------
+  Button Hover Styling
+/*----------------------------------------------------------*/
+
+button:hover {
+  color: rgb(48, 48, 48);
+}
+
+/*------------------------------------------------------------
+  Fade In Animation Styling
+/*----------------------------------------------------------*/
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}

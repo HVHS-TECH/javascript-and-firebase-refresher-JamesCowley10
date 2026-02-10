@@ -5,6 +5,7 @@
 
 <head>
     <title>JavaScript and Firebase refresher</title>
+    <link rel="stylesheet" href="./main/index/css/style.css">
 </head>
 
 <body>
@@ -13,12 +14,13 @@
 
     <p>Your tasks:
     <ul>
+        <label>Google Authentication (Do this first):</label>
+        <button onclick="fb_login()">Login</button><br>
         <label>Send To Firebase:</label>
         <input type="text" id="textInput" placeholder="Type here..">
         <button onclick="onTextInputButtonClick()">Submit</button><br>
-        <button onclick="readMessage()">Read From Firebase!</button><br>
-        <button onclick="fb_login()">Google Authentication (Do this first)</button>
-
+        <label>Read From Firebase:</label>
+        <button onclick="readMessage()">Read</button><br>
     </ul>
 
     <h2>JavaScript</h2>
