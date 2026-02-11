@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: customFont;
-  src: url('/assets/customFont.ttf') format('truetype');
+  src: url('../../../assets/customFont.ttf') format('truetype');
   font-display: swap;
 }
 
