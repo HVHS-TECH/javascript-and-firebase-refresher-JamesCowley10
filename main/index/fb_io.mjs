@@ -112,6 +112,8 @@ function fb_login() {
         sessionStorage.setItem("photoURL", userDetails.photoURL);
         sessionStorage.setItem("displayName", userDetails.displayName);
 
+        fb_set('userDetails/' + userDetails.uid, userDetails);
+
         const dbReference = ref(FB_GAMEDB, 'userDetails/' + userDetails.uid);
         get(dbReference).then((snapshot) => {
             var fb_data = snapshot.val();
